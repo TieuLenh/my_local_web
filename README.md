@@ -13,7 +13,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.jsx", // file chính
+  entry: "./src/index.jsx",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
@@ -22,12 +22,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/, // hỗ trợ cả .js và .jsx
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: "babel-loader"
       },
       {
-        test: /\.css$/, // load CSS
+        test: /\.css$/,
         use: ["style-loader", "css-loader"]
       }
     ]
