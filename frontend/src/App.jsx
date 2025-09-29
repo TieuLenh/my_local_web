@@ -1,6 +1,6 @@
-import Header from "./components/header/header";
-import Slider from "./components/slider/slider";
-import Footer from "./components/footer/footer";
+import Header from "./components/header/Header";
+import Slider from "./components/slider/Slider";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
 	return(

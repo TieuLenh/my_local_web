@@ -4,7 +4,7 @@ const Header = ({className = 'header', ...props}) => {
             className={className}
             {...props}
         >
-            header test
+            Header test
         </div>
     )
 }

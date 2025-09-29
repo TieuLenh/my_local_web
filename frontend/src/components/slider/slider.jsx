@@ -1,3 +1,6 @@
+import Clock from "./clock/Clock";
+
+
 const Slider = ({className = 'slider', ...props}) => {
     return(
         <div
@@ -5,6 +8,7 @@ const Slider = ({className = 'slider', ...props}) => {
             {...props}
         >
             Slider test
+            <Clock />
         </div>
     )
 }
