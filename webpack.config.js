@@ -20,11 +20,11 @@ module.exports = {
         }),
     ],
     resolve: { extensions: [".js", ".jsx"] },
-    devServer: {
-        static: { directory: path.join(__dirname, "public") },
-        port: 3000,
-        open: true,
-        hot: true,
-    },
+    // devServer: {
+    //     static: { directory: path.join(__dirname, "public") },
+    //     port: 3000,
+    //     open: true,
+    //     hot: true,
+    // },
     mode: "development",
 };

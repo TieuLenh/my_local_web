@@ -3,6 +3,8 @@ const app = express();
 const path = require('path');
 const port = 5000;
 
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
 })
