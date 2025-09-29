@@ -11,9 +11,12 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /.(js|jsx)$/, exclude: /node_modules/, use: "babel-loader" },
+            { test: /\.(js|jsx)$/, exclude: /node_modules/, use: "babel-loader" },
             { test: /.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
-            { test: /.(scss|sass)$/, use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"] },
+            {
+                test: /\.(scss|sass)$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+            },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
                 type: "asset/resource",
@@ -31,8 +34,11 @@ module.exports = {
         ],
     },
     plugins: [
-    new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             template: "./frontend/public/index.html", // dùng file gốc làm template
+        }),
+        new MiniCssExtractPlugin({
+            filename: "assets/css/styles.css", // tách file CSS riêng
         }),
     ],
     resolve: { extensions: [".js", ".jsx", ".sass", ".scss", ".css"] },
