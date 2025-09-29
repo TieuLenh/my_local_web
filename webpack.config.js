@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: "./frontend/src/index.js",
@@ -13,6 +14,11 @@ module.exports = {
         { test: /.css$/, use: ["style-loader", "css-loader"] },
         ],
     },
+    plugins: [
+    new HtmlWebpackPlugin({
+            template: "./frontend/public/index.html", // dùng file gốc làm template
+        }),
+    ],
     resolve: { extensions: [".js", ".jsx"] },
     devServer: {
         static: { directory: path.join(__dirname, "public") },
