@@ -2,11 +2,11 @@
 
 
 .slider{
-    margin-top: 60px;
+    margin-top: $header-height;
 }
 .clock{
     display: flex;
 }
 #bar1, #bar2, #bar3, #clock-container {
-  scroll-margin-top: 60px; /* bằng chiều cao header */
+  scroll-margin-top: $header-height; /* bằng chiều cao header */
 }
