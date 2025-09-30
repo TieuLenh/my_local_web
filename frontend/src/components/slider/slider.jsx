@@ -9,9 +9,9 @@ const Slider = ({className = 'slider', ...props}) => {
         >
             Slider test
             <Clock />
-            <div id='bar1'>content1</div>
-            <div id='bar2'>content2</div>
-            <div id='bar3'>content3</div>
+            <div id='bar1' style={{height: '100px',}}>content1</div>
+            <div id='bar2' style={{height: '100px',}}>content2</div>
+            <div id='bar3' style={{height: '100px',}}>content3</div>
         </div>
     )
 }
