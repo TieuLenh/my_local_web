@@ -1,0 +1,331 @@
+## **Nhóm 1: Box Model & Kích thước**
+
+| **Thuộc tính**                                       | **Đơn vị**              | **Công dụng**                         |
+| ---------------------------------------------------- | ----------------------- | ------------------------------------- |
+| `width`, `height`                                    | px, %, em, rem, vw, vh  | Đặt chiều rộng, chiều cao phần tử.    |
+| `min-width`, `max-width`, `min-height`, `max-height` | px, %, em, rem, vw, vh  | Giới hạn kích thước tối thiểu/tối đa. |
+| `margin`                                             | px, %, em, rem, auto    | Khoảng cách ngoài phần tử.            |
+| `padding`                                            | px, %, em, rem          | Khoảng cách trong (nội dung ↔ viền).  |
+| `border`                                             | px, em, rem, màu, kiểu  | Tạo viền cho phần tử.                 |
+| `border-radius`                                      | px, em, %, rem          | Bo tròn góc.                          |
+| `box-sizing`                                         | content-box, border-box | Cách tính kích thước phần tử.         |
+
+---
+
+## **Nhóm 2: Văn bản & Font**
+
+| **Thuộc tính**                | **Đơn vị**                              | **Công dụng**                       |
+| ----------------------------- | --------------------------------------- | ----------------------------------- |
+| `color`                       | tên màu, hex, rgb, hsl                  | Màu chữ.                            |
+| `font-family`                 | tên font                                | Kiểu chữ.                           |
+| `font-size`                   | px, em, rem, %, vw                      | Kích thước chữ.                     |
+| `font-weight`                 | normal, bold, 100–900                   | Độ đậm chữ.                         |
+| `font-style`                  | normal, italic, oblique                 | Kiểu chữ.                           |
+| `line-height`                 | số, px, em, rem, %                      | Chiều cao dòng.                     |
+| `letter-spacing`              | px, em, rem                             | Khoảng cách giữa ký tự.             |
+| `word-spacing`                | px, em, rem                             | Khoảng cách giữa từ.                |
+| `text-align`                  | left, right, center, justify            | Căn lề chữ.                         |
+| `text-decoration`             | underline, overline, line-through, none | Trang trí chữ.                      |
+| `text-transform`              | uppercase, lowercase, capitalize        | Chuyển đổi chữ hoa/thường.          |
+| `white-space`                 | normal, nowrap, pre, pre-wrap, pre-line | Kiểm soát khoảng trắng, xuống dòng. |
+| `overflow-wrap`, `word-break` | break-word, normal                      | Ngắt từ khi dài quá.                |
+
+---
+
+## **Nhóm 3: Màu sắc & Nền**
+
+| **Thuộc tính**          | **Đơn vị**                              | **Công dụng**          |
+| ----------------------- | --------------------------------------- | ---------------------- |
+| `background-color`      | tên màu, hex, rgb, hsl                  | Màu nền.               |
+| `background-image`      | url()                                   | Ảnh nền.               |
+| `background-size`       | cover, contain, px, %, auto             | Kích thước ảnh nền.    |
+| `background-repeat`     | repeat, no-repeat, repeat-x, repeat-y   | Lặp ảnh nền.           |
+| `background-position`   | top, bottom, left, right, center, px, % | Vị trí ảnh nền.        |
+| `background-attachment` | scroll, fixed, local                    | Cố định hay cuộn nền.  |
+| `background-clip`       | border-box, padding-box, content-box    | Phạm vi nền.           |
+| `opacity`               | 0–1                                     | Độ trong suốt phần tử. |
+| `box-shadow`            | offset-x, offset-y, blur, spread, màu   | Đổ bóng phần tử.       |
+
+---
+
+## **Nhóm 4: Layout & Hiển thị**
+
+| **Thuộc tính**                   | **Đơn vị**                                    | **Công dụng**                          |
+| -------------------------------- | --------------------------------------------- | -------------------------------------- |
+| `display`                        | block, inline, inline-block, flex, grid, none | Kiểu hiển thị phần tử.                 |
+| `visibility`                     | visible, hidden, collapse                     | Ẩn/hiện nhưng vẫn giữ chỗ.             |
+| `position`                       | static, relative, absolute, fixed, sticky     | Kiểu định vị phần tử.                  |
+| `top`, `right`, `bottom`, `left` | px, %, em, rem, vw, vh                        | Đặt vị trí khi dùng position ≠ static. |
+| `z-index`                        | số (int)                                      | Thứ tự lớp (layer).                    |
+| `float`                          | left, right, none                             | Thả nổi phần tử.                       |
+| `clear`                          | left, right, both, none                       | Ngăn chặn float.                       |
+| `columns`                        | auto, số                                      | Chia nhiều cột văn bản.                |
+| `column-count`                   | số                                            | Số lượng cột văn bản.                  |
+| `column-gap`                     | px, em, rem, %                                | Khoảng cách giữa cột.                  |
+| `column-rule`                    | px, màu, kiểu                                 | Đường phân cách cột.                   |
+| `column-span`                    | all, none                                     | Phần tử trải dài nhiều cột.            |
+| `column-width`                   | px, em, rem                                   | Độ rộng mỗi cột.                       |
+
+---
+
+## **Nhóm 5: Flexbox**
+
+| **Thuộc tính**    | **Đơn vị**                                                              | **Công dụng**                   |
+| ----------------- | ----------------------------------------------------------------------- | ------------------------------- |
+| `display: flex`   | —                                                                       | Bật Flexbox cho container.      |
+| `flex-direction`  | row, row-reverse, column, column-reverse                                | Hướng trục chính.               |
+| `flex-wrap`       | nowrap, wrap, wrap-reverse                                              | Cho phép xuống dòng.            |
+| `justify-content` | flex-start, flex-end, center, space-between, space-around, space-evenly | Căn chỉnh theo trục chính.      |
+| `align-items`     | flex-start, flex-end, center, stretch, baseline                         | Căn chỉnh theo trục phụ.        |
+| `align-content`   | flex-start, flex-end, center, space-between, space-around, stretch      | Căn chỉnh nhiều dòng flex.      |
+| `order`           | số (int)                                                                | Thay đổi thứ tự item.           |
+| `flex-grow`       | số (0–n)                                                                | Khả năng phóng to item.         |
+| `flex-shrink`     | số (0–n)                                                                | Khả năng co nhỏ item.           |
+| `flex-basis`      | px, %, auto                                                             | Kích thước cơ bản của item.     |
+| `flex`            | grow shrink basis                                                       | Viết tắt cho 3 thuộc tính trên. |
+
+---
+
+## **Nhóm 6: CSS Grid**
+
+| **Thuộc tính**          | **Đơn vị**                  | **Công dụng**                               |
+| ----------------------- | --------------------------- | ------------------------------------------- |
+| `display: grid`         | —                           | Bật CSS Grid cho container.                 |
+| `grid-template-rows`    | px, %, fr, auto             | Định nghĩa chiều cao hàng.                  |
+| `grid-template-columns` | px, %, fr, auto             | Định nghĩa chiều rộng cột.                  |
+| `grid-template-areas`   | tên vùng                    | Đặt layout theo tên vùng.                   |
+| `grid-row`              | số, span                    | Vị trí item theo hàng.                      |
+| `grid-column`           | số, span                    | Vị trí item theo cột.                       |
+| `grid-auto-rows`        | px, %, fr, auto             | Kích thước hàng tự động.                    |
+| `grid-auto-columns`     | px, %, fr, auto             | Kích thước cột tự động.                     |
+| `gap`                   | px, em, rem, %              | Khoảng cách hàng & cột.                     |
+| `row-gap`               | px, em, rem, %              | Khoảng cách giữa hàng.                      |
+| `column-gap`            | px, em, rem, %              | Khoảng cách giữa cột.                       |
+| `justify-items`         | start, end, center, stretch | Căn chỉnh item theo chiều ngang.            |
+| `align-items`           | start, end, center, stretch | Căn chỉnh item theo chiều dọc.              |
+| `place-items`           | align justify               | Gộp 2 thuộc tính trên.                      |
+| `justify-self`          | start, end, center, stretch | Căn chỉnh riêng từng item theo chiều ngang. |
+| `align-self`            | start, end, center, stretch | Căn chỉnh riêng từng item theo chiều dọc.   |
+| `place-self`            | align justify               | Gộp 2 thuộc tính trên cho item.             |
+
+---
+
+## **Nhóm 7: Animation & Transition**
+
+| **Thuộc tính**               | **Đơn vị**                                      | **Công dụng**                     |
+| ---------------------------- | ----------------------------------------------- | --------------------------------- |
+| `transition`                 | property duration timing-function delay         | Viết tắt cho hiệu ứng chuyển đổi. |
+| `transition-property`        | all, tên thuộc tính                             | Thuộc tính sẽ chuyển đổi.         |
+| `transition-duration`        | s, ms                                           | Thời gian chuyển đổi.             |
+| `transition-timing-function` | ease, linear, ease-in, ease-out, cubic-bezier() | Đường cong tốc độ.                |
+| `transition-delay`           | s, ms                                           | Thời gian chờ trước khi chạy.     |
+| `@keyframes`                 | —                                               | Định nghĩa hoạt ảnh.              |
+| `animation-name`             | tên keyframes                                   | Chỉ định hoạt ảnh.                |
+| `animation-duration`         | s, ms                                           | Thời gian hoạt ảnh.               |
+| `animation-iteration-count`  | số, infinite                                    | Số lần lặp lại.                   |
+| `animation-direction`        | normal, reverse, alternate, alternate-reverse   | Hướng chạy hoạt ảnh.              |
+| `animation-timing-function`  | ease, linear, cubic-bezier()                    | Kiểu tốc độ chuyển động.          |
+| `animation-fill-mode`        | none, forwards, backwards, both                 | Trạng thái trước/sau khi chạy.    |
+| `animation-play-state`       | running, paused                                 | Bật/tạm dừng hoạt ảnh.            |
+
+---
+
+## **Nhóm 8: Transform & Effects**
+
+| **Thuộc tính**        | **Đơn vị**                                                                                            | **Công dụng**                                     |
+| --------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| `transform`           | translate(px, %), scale(số), rotate(deg), skew(deg)                                                   | Biến đổi phần tử (dịch, xoay, phóng to, nghiêng). |
+| `transform-origin`    | px, %, từ khóa (center, top, left…)                                                                   | Gốc biến đổi.                                     |
+| `transform-style`     | flat, preserve-3d                                                                                     | Cho phép 3D hay không.                            |
+| `perspective`         | px                                                                                                    | Khoảng cách nhìn phối cảnh.                       |
+| `perspective-origin`  | px, %, từ khóa                                                                                        | Gốc nhìn phối cảnh.                               |
+| `backface-visibility` | visible, hidden                                                                                       | Hiện/ẩn mặt sau phần tử 3D.                       |
+| `opacity`             | 0–1                                                                                                   | Độ trong suốt.                                    |
+| `filter`              | blur(px), brightness(%), contrast(%), grayscale(%), hue-rotate(deg), invert(%), saturate(%), sepia(%) | Hiệu ứng ảnh.                                     |
+| `backdrop-filter`     | blur(px), brightness(%), contrast(%), …                                                               | Hiệu ứng nền phía sau.                            |
+| `mix-blend-mode`      | multiply, screen, overlay, darken, lighten, difference, exclusion…                                    | Trộn màu phần tử.                                 |
+| `isolation`           | auto, isolate                                                                                         | Kiểm soát trộn màu.                               |
+| `mask`                | giá trị mask                                                                                          | Che phủ phần tử.                                  |
+| `mask-image`          | url(), gradient                                                                                       | Ảnh mask.                                         |
+| `mask-repeat`         | repeat, no-repeat, space, round                                                                       | Cách lặp mask.                                    |
+| `mask-size`           | auto, cover, contain, px, %                                                                           | Kích thước mask.                                  |
+
+---
+
+## **Nhóm 9: Responsive & Queries**
+
+| **Thuộc tính / Quy tắc** | **Đơn vị**                                    | **Công dụng**                          |
+| ------------------------ | --------------------------------------------- | -------------------------------------- |
+| `@media`                 | điều kiện (min-width px, orientation, print…) | CSS cho màn hình hoặc thiết bị cụ thể. |
+| `@supports`              | thuộc tính:giá trị                            | Kiểm tra trình duyệt có hỗ trợ không.  |
+| `@container`             | inline-size, min-width, max-width…            | Responsive dựa vào container cha.      |
+| `@layer`                 | tên layer                                     | Quản lý lớp ưu tiên CSS.               |
+| `clamp()`                | min, preferred, max                           | Giới hạn giá trị động.                 |
+| `min()`                  | nhiều giá trị                                 | Lấy giá trị nhỏ nhất.                  |
+| `max()`                  | nhiều giá trị                                 | Lấy giá trị lớn nhất.                  |
+
+---
+
+## **Nhóm 10: Flexbox**
+
+| **Thuộc tính**    | **Đơn vị**                                                              | **Công dụng**                      |
+| ----------------- | ----------------------------------------------------------------------- | ---------------------------------- |
+| `display`         | flex, inline-flex                                                       | Kích hoạt Flexbox.                 |
+| `flex-direction`  | row, row-reverse, column, column-reverse                                | Hướng trục chính.                  |
+| `flex-wrap`       | nowrap, wrap, wrap-reverse                                              | Cho phép xuống dòng.               |
+| `flex-flow`       | `<flex-direction> <flex-wrap>`                                          | Viết tắt 2 thuộc tính trên.        |
+| `justify-content` | flex-start, flex-end, center, space-between, space-around, space-evenly | Căn chỉnh theo trục chính.         |
+| `align-items`     | stretch, flex-start, flex-end, center, baseline                         | Căn chỉnh theo trục chéo.          |
+| `align-self`      | auto, stretch, flex-start, flex-end, center, baseline                   | Căn riêng 1 item.                  |
+| `align-content`   | flex-start, flex-end, center, space-between, space-around, stretch      | Căn chỉnh nhiều dòng.              |
+| `flex`            | grow shrink basis                                                       | Viết tắt cho phân chia không gian. |
+| `flex-grow`       | số                                                                      | Tỉ lệ mở rộng.                     |
+| `flex-shrink`     | số                                                                      | Tỉ lệ thu hẹp.                     |
+| `flex-basis`      | auto, px, %, em…                                                        | Kích thước cơ bản.                 |
+| `order`           | số                                                                      | Thứ tự hiển thị.                   |
+
+---
+
+## **Nhóm 11: Grid Layout**
+
+| **Thuộc tính**          | **Đơn vị**                                                    | **Công dụng**            |
+| ----------------------- | ------------------------------------------------------------- | ------------------------ |
+| `display`               | grid, inline-grid                                             | Kích hoạt Grid.          |
+| `grid-template-columns` | px, %, fr, repeat(), minmax()                                 | Định nghĩa cột.          |
+| `grid-template-rows`    | px, %, fr, repeat(), minmax()                                 | Định nghĩa hàng.         |
+| `grid-template-areas`   | tên khu vực                                                   | Đặt layout bằng tên.     |
+| `grid-column`           | start / end                                                   | Vị trí cột.              |
+| `grid-row`              | start / end                                                   | Vị trí hàng.             |
+| `grid-area`             | tên hoặc số                                                   | Gán vào một khu vực.     |
+| `grid-auto-columns`     | px, %, fr                                                     | Kích thước cột tự sinh.  |
+| `grid-auto-rows`        | px, %, fr                                                     | Kích thước hàng tự sinh. |
+| `grid-auto-flow`        | row, column, row dense, column dense                          | Cách auto đặt item.      |
+| `gap`                   | px, em, %                                                     | Khoảng cách chung.       |
+| `row-gap`               | px, em, %                                                     | Khoảng cách hàng.        |
+| `column-gap`            | px, em, %                                                     | Khoảng cách cột.         |
+| `place-items`           | align / justify                                               | Căn chỉnh item trong ô.  |
+| `place-content`         | align / justify                                               | Căn chỉnh toàn grid.     |
+| `justify-items`         | start, end, center, stretch                                   | Căn ngang từng item.     |
+| `align-items`           | start, end, center, stretch                                   | Căn dọc từng item.       |
+| `justify-content`       | start, end, center, space-between, space-around, space-evenly | Căn ngang toàn grid.     |
+| `align-content`         | start, end, center, space-between, space-around, stretch      | Căn dọc toàn grid.       |
+
+---
+
+## **Nhóm 12: Position & Z-index**
+
+| **Thuộc tính**    | **Đơn vị**                                | **Công dụng**               |
+| ----------------- | ----------------------------------------- | --------------------------- |
+| `position`        | static, relative, absolute, fixed, sticky | Cách định vị phần tử.       |
+| `top`             | px, %, em…                                | Khoảng cách từ trên.        |
+| `right`           | px, %, em…                                | Khoảng cách từ phải.        |
+| `bottom`          | px, %, em…                                | Khoảng cách từ dưới.        |
+| `left`            | px, %, em…                                | Khoảng cách từ trái.        |
+| `inset`           | top right bottom left                     | Viết tắt vị trí.            |
+| `z-index`         | số                                        | Thứ tự chồng lớp.           |
+| `float`           | left, right, none                         | Đẩy phần tử sang 1 bên.     |
+| `clear`           | none, left, right, both                   | Ngắt ảnh hưởng của float.   |
+| `clip` (cũ)       | rect()                                    | Cắt vùng hiển thị.          |
+| `clip-path`       | circle(), ellipse(), polygon(), inset()   | Cắt bằng hình khối.         |
+| `overflow`        | visible, hidden, scroll, auto             | Xử lý khi nội dung tràn.    |
+| `overflow-x`      | visible, hidden, scroll, auto             | Tràn ngang.                 |
+| `overflow-y`      | visible, hidden, scroll, auto             | Tràn dọc.                   |
+| `object-fit`      | fill, contain, cover, scale-down, none    | Cách ảnh/video fit vào box. |
+| `object-position` | px, %, từ khóa                            | Vị trí ảnh/video trong box. |
+
+---
+
+## **Nhóm 13: Transition & Animation**
+
+| **Thuộc tính**               | **Đơn vị**                                               | **Công dụng**                 |
+| ---------------------------- | -------------------------------------------------------- | ----------------------------- |
+| `transition`                 | all 0.3s ease                                            | Viết tắt.                     |
+| `transition-property`        | all, color, background, transform…                       | Xác định thuộc tính thay đổi. |
+| `transition-duration`        | s, ms                                                    | Thời gian chạy.               |
+| `transition-timing-function` | ease, linear, ease-in, ease-out, cubic-bezier()          | Đường cong tốc độ.            |
+| `transition-delay`           | s, ms                                                    | Trì hoãn bắt đầu.             |
+| `animation`                  | name duration timing delay iteration direction fill play | Viết tắt.                     |
+| `animation-name`             | tên keyframes                                            | Gọi hiệu ứng.                 |
+| `animation-duration`         | s, ms                                                    | Thời gian chạy.               |
+| `animation-timing-function`  | ease, linear, cubic-bezier()                             | Nhịp độ.                      |
+| `animation-delay`            | s, ms                                                    | Trì hoãn.                     |
+| `animation-iteration-count`  | số, infinite                                             | Số lần lặp.                   |
+| `animation-direction`        | normal, reverse, alternate, alternate-reverse            | Chiều chạy.                   |
+| `animation-fill-mode`        | none, forwards, backwards, both                          | Giữ trạng thái sau khi chạy.  |
+| `animation-play-state`       | running, paused                                          | Tạm dừng/tiếp tục.            |
+
+---
+
+## **Nhóm 14: Transform**
+
+| **Thuộc tính**        | **Đơn vị**                                       | **Công dụng**             |
+| --------------------- | ------------------------------------------------ | ------------------------- |
+| `transform`           | translate(), rotate(), scale(), skew(), matrix() | Biến đổi phần tử.         |
+| `transform-origin`    | px, %, từ khóa                                   | Gốc xoay/scale.           |
+| `transform-box`       | border-box, fill-box, view-box                   | Xác định hộp tham chiếu.  |
+| `perspective`         | px                                               | Khoảng cách phối cảnh 3D. |
+| `perspective-origin`  | px, %                                            | Gốc phối cảnh.            |
+| `backface-visibility` | visible, hidden                                  | Hiện/ẩn mặt sau khi xoay. |
+
+---
+
+## **Nhóm 15: Filter & Backdrop**
+
+| **Thuộc tính**    | **Đơn vị**                                                                                                           | **Công dụng**                          |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| `filter`          | blur(), brightness(), contrast(), grayscale(), hue-rotate(), invert(), opacity(), saturate(), sepia(), drop-shadow() | Áp hiệu ứng cho phần tử.               |
+| `backdrop-filter` | blur(), brightness(), contrast(),…                                                                                   | Áp hiệu ứng nền phía sau.              |
+| `mix-blend-mode`  | multiply, screen, overlay, darken, lighten, color-burn, difference, exclusion…                                       | Cách trộn màu giữa phần tử với nền.    |
+| `isolation`       | auto, isolate                                                                                                        | Tách phần tử để tránh blend với ngoài. |
+
+---
+
+## **Nhóm 16: Responsive & Media Queries**
+
+| **Thuộc tính / Quy tắc** | **Đơn vị**                                                     | **Công dụng**                                                     |
+| ------------------------ | -------------------------------------------------------------- | ----------------------------------------------------------------- |
+| `@media`                 | width, height, orientation, resolution, hover, pointer, color… | Tạo CSS theo điều kiện thiết bị.                                  |
+| `@container`             | size, inline-size                                              | Container query (theo kích thước container, không phải viewport). |
+| `@supports`              | property: value                                                | Kiểm tra hỗ trợ thuộc tính.                                       |
+| `@import`                | url                                                            | Nhúng CSS khác.                                                   |
+| `@charset`               | "UTF-8"                                                        | Khai báo bộ mã ký tự.                                             |
+| `@page`                  | size, margin                                                   | Quy định in ấn.                                                   |
+| `@viewport` (ít dùng)    | width, height, zoom                                            | Điều khiển viewport.                                              |
+
+---
+
+## **Nhóm 17: Variables & Custom Properties**
+
+| **Thuộc tính**                      | **Đơn vị**                            | **Công dụng**                                           |
+| ----------------------------------- | ------------------------------------- | ------------------------------------------------------- |
+| `--tên-biến`                        | giá trị (màu, số, chuỗi…)             | Khai báo biến CSS.                                      |
+| `var(--tên-biến, giá-trị-dự-phòng)` | theo biến                             | Gọi giá trị biến.                                       |
+| `:root`                             | selector toàn cục                     | Thường dùng để khai báo biến toàn cục.                  |
+| `@property`                         | name, syntax, inherits, initial-value | Khai báo custom property có type rõ ràng (CSS Houdini). |
+
+---
+
+1. Box Model
+2. Typography
+3. Color & Background
+4. Border & Outline
+5. Position & Display
+6. Flexbox
+7. Grid
+8. Table
+9. List & Content
+10. Pseudo-classes & Pseudo-elements
+11. Overflow & Visibility
+12. Clip, Mask, Shapes
+13. Transition & Animation
+14. Transform
+15. Filter & Backdrop
+16. Responsive & Media Queries
+17. Variables & Custom Properties
+
+
+
+
+
+
+

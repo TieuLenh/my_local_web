@@ -1,5 +1,5 @@
+import './Slider.scss';
 import Clock from "./clock/Clock";
-
 
 const Slider = ({className = 'slider', ...props}) => {
     return(
