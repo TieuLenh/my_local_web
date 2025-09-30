@@ -1,5 +1,12 @@
 @use '../../assets/styles/styles.scss' as *;
 
+
+.slider{
+    margin-top: 60px;
+}
 .clock{
     display: flex;
+}
+#bar1, #bar2, #bar3, #clock-container {
+  scroll-margin-top: 60px; /* bằng chiều cao header */
 }

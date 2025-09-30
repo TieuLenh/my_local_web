@@ -1,1 +1,16 @@
 @use '../../assets/styles/styles.scss' as *;
+
+.header{
+    position: fixed;
+    top: 0;
+    background-color: $primary-color;
+    z-index: 10;
+    & > ul > li{
+        display: inline-flex;
+        margin: 0 20px;
+        & > a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

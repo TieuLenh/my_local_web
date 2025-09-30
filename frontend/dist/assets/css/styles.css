@@ -1,8 +1,44 @@
 /*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./frontend/src/components/header/Header.scss ***!
+  \*************************************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #ac0d4a;
+  z-index: 10;
+}
+.header > ul > li {
+  display: inline-flex;
+  margin: 0 20px;
+}
+.header > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+/*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./frontend/src/components/slider/Slider.scss ***!
   \*************************************************************************************************************************************/
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.slider {
+  margin-top: 60px;
+}
+
 .clock {
   display: flex;
+}
+
+#bar1, #bar2, #bar3, #clock-container {
+  scroll-margin-top: 60px; /* bằng chiều cao header */
 }
 /*!******************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./frontend/src/components/slider/clock/Clock.scss ***!
