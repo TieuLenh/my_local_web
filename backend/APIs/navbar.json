@@ -1,8 +1,21 @@
 {
     "idList":[
-        "clock-container",
-        "nav1",
-        "nav2",
-        "nav3"
+        {
+            "id": "clock-container",
+            "name": "Home"
+        },
+        {
+            "id": "nav1",
+            "name": "name1"
+        },
+        {
+            "id": "nav2",
+            "name": "name2"
+        },
+        {
+            "id": "nav3",
+            "name": "name3"
+        }
+        
     ]
 }

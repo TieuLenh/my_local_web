@@ -8,5 +8,6 @@
     display: flex;
 }
 #nav1, #nav2, #nav3, #clock-container {
-  scroll-margin-top: $header-height; /* bằng chiều cao header */
+    height: 1000px;
+    scroll-margin-top: $header-height; /* bằng chiều cao header */
 }

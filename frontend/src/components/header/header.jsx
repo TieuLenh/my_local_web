@@ -1,6 +1,6 @@
-import './Header.scss';
 import { useEffect, useState } from 'react';
-
+import './Header.scss';
+import Navbar, { navElement } from './nav-bar/Navbar';
 
 const Header = ({className = 'header', ...props}) => {
     const [data, setData] = useState({});
@@ -22,9 +22,7 @@ const Header = ({className = 'header', ...props}) => {
             className={className}
             {...props}
         >
-            <ul>
-                {(data.idList|| []).map((val, idx) => <li key={idx}><a href={'#'+val}>nav{idx}</a></li>)}
-            </ul>
+            <Navbar />
         </div>
     )
 }
